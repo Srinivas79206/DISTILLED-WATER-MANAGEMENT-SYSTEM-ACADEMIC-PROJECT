@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>admin_log</servlet-name>
+        <servlet-class>DWMS.admin_log</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>add_product</servlet-name>
+        <servlet-class>Products.add_product</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>tester_log</servlet-name>
+        <servlet-class>Tester.tester_log</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>transport_log</servlet-name>
+        <servlet-class>Transporter.transport_log</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin_log</servlet-name>
+        <url-pattern>/admin_log</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add_product</servlet-name>
+        <url-pattern>/add_product</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>tester_log</servlet-name>
+        <url-pattern>/tester_log</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>transport_log</servlet-name>
+        <url-pattern>/transport_log</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
